@@ -1,0 +1,164 @@
+<style>
+  /*** FONTS ***/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+/*** VARIABLES ***/
+/* Colors */
+/*** EXTEND ***/
+/* box-shadow */
+ol.gradient-list > li::before, ol.gradient-list > li {
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+}
+
+/*** STYLE ***/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  color: #1d1f20;
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 1rem;
+}
+
+ol.gradient-list {
+  counter-reset: gradient-counter;
+  list-style: none;
+  margin: 1.75rem 0;
+  padding-left: 1rem;
+}
+ol.gradient-list > li {
+  background: white;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  counter-increment: gradient-counter;
+  margin-top: 1rem;
+  min-height: 3rem;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+}
+ol.gradient-list > li::before, ol.gradient-list > li::after {
+  background: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
+  border-radius: 1rem 1rem 0 1rem;
+  content: "";
+  height: 3rem;
+  left: -1rem;
+  overflow: hidden;
+  position: absolute;
+  top: -1rem;
+  width: 3rem;
+}
+ol.gradient-list > li::before {
+  align-items: flex-end;
+  content: counter(gradient-counter);
+  color: #1d1f20;
+  display: flex;
+  font: 900 1.5em/1 "Montserrat";
+  justify-content: flex-end;
+  padding: 0.125em 0.25em;
+  z-index: 1;
+}
+ol.gradient-list > li:nth-child(10n+1):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+ol.gradient-list > li:nth-child(10n+2):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
+}
+ol.gradient-list > li:nth-child(10n+3):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
+}
+ol.gradient-list > li:nth-child(10n+4):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+ol.gradient-list > li:nth-child(10n+5):before {
+  background: linear-gradient(135deg, #a2ed56 0%, #fddc32 100%);
+}
+ol.gradient-list > li:nth-child(10n+6):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+ol.gradient-list > li:nth-child(10n+7):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
+}
+ol.gradient-list > li:nth-child(10n+8):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
+}
+ol.gradient-list > li:nth-child(10n+9):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+ol.gradient-list > li:nth-child(10n+10):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0) 0%, rgba(253, 220, 50, 0) 100%);
+}
+ol.gradient-list > li + li {
+  margin-top: 2rem;
+}
+</style>
+
+<main>
+  
+  <h1 style="text-align:center">CSE310: PROGRAMMING IN JAVA</h1>
+  
+  <ol class="gradient-list">
+    <li><b>Introduction to Java:</b> History and Features of Java, Java program structure, Writing simple Java class and main() method, Command-line arguments, Understanding JDK, JRE and JVM
+        <br/> <br/> <b>Data In the Cart:</b> Using primitive data types, Type conversion, Keywords, Identifiers, Variables, Access modifiers, static keyword, Wrapper class
+        <br/> <br/>  <b>Operators:</b> Working with Bit-wise, arithmetic, logical, and relational operators, Unary, assignment and Ternary operator, Operator precedence 
+        <br/> <br/>  <b>Conditional Statements:</b> Using if/else constructs and switch-case statements
+      <br/><br/><b><a href="https://github.com/sauravhathi/lpu.CSE310/tree/master/Unit1" style="color:red;text-decoration:none;">Download Unit 1 PPT</a></b>
+    </li>
+    <li>
+        <b>Loops:</b> Working with for loop, while loop, do-while loop and for-each loop,
+        <br/> <br/> <b>Arrays and Enums:</b> Fundamentals about Arrays, Multi-dimensional arrays, Array Access and
+Iterations, Using varargs, Enumerations
+        <br/> <br/>  <b>OOP Concepts:</b> Basics of class and objects, Writing constructors and methods, Overloading methods
+and constructors, this keyword, initializer blocks 
+        <br/> <br/>  <b>String Class:</b> Constructors and methods of String and String Builder class
+      <br/><br/><b><a href="https://github.com/sauravhathi/lpu.CSE310/tree/master/Unit2" style="color:red;text-decoration:none;">Download Unit 2 PPT</a></b>
+    </li>
+    <li>
+        <b>Inheritance:</b> Inheritance, Method overriding, super keyword, Object class and overriding toString()
+and equals() method, Using super and final keywords, instanceof operator
+        <br/> <br/> <b>Abstract Class and Interface:</b> Abstract method and abstract class, Interfaces, static and default
+methods, Using Swing Components to demonstrate inheritance
+      <br/><br/><b><a href="https://github.com/sauravhathi/lpu.CSE310/tree/master/Unit3" style="color:red;text-decoration:none;">Download Unit 3 PPT</a></b>
+    </li>
+    <li>
+        <b>Functional Interface and Lambda Expressions:</b> Using Lambda expressions, Implementing
+Threads using Lambda expressions, Implementing Listener using Lambda expressions
+        <br/> <br/> <b>Nested Class:</b> Understanding the importance of static and non-static nested classes, Local and
+Anonymous class
+      <br/> <br/> <b>Utility Classes:</b> Working with Dates
+      <br/><br/><b><a href="https://github.com/sauravhathi/lpu.CSE310/tree/master/Unit4" style="color:red;text-decoration:none;">Download Unit 4 PPT</a></b>
+    </li>
+    <li>
+        <b>Exceptions and Assertions:</b> Exception overview, Exception class hierarchy and exception types,
+Propagation of exceptions, Using try, catch and finally for exception handling, Usage of throw and
+throws, handling multiple exceptions using multi-catch, Autoclose resources with try-with-resources
+statement, Creating custom exceptions, Testing invariants by using assertions
+        <br/> <br/> <b>I/O Fundamentals:</b> Describing the basics of input and output in Java, Read and write data from the
+console, Using streams to read and write files, Writing and read objects using serialization
+      <br/><br/><b><a href="https://github.com/sauravhathi/lpu.CSE310/tree/master/Unit5" style="color:red;text-decoration:none;">Download Unit 5 PPT</a></b>
+    </li>
+    <li>
+        <b>Generics and Collections:</b> Creating a custom generic class, Using the type inference diamond to
+create an object, Using bounded types and Wild Cards, Creating a collection by using generics,
+Implementing an ArrayList, Implementing TreeSet using Comparable and Comparator interfaces,
+Implementing a HashMap, Implementing a Deque 
+      <br/><br/><b><a href="https://github.com/sauravhathi/lpu.CSE310/tree/master/Unit6" style="color:red;text-decoration:none;">Download Unit 6 PPT</a></b>
+    </li>
+  </ol>
+</main>
+ <footer style="text-align:right">
+      &copy; <em id="date"></em> github.com/sauravhathi
+ </footer>
